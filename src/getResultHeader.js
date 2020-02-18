@@ -62,7 +62,7 @@ const getResultHeader = (result, globalConfig, projectConfig) => {
       );
   }
 
-  return `${status} ${projectDisplayName}${testPathDetails}${testDetails}${consoleResult}`;
+  return ``; // original is `${status} ${projectDisplayName}${testPathDetails}${testDetails}${consoleResult}`;`
 };
 
 module.exports = getResultHeader;

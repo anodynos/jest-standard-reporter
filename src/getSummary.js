@@ -79,7 +79,7 @@ const getSummary = (aggregatedResults, options) => {
 
   const time = renderTime(runTime, estimatedTime, width);
 
-  return [suites, tests, snapshots, time].join('\n');
+  return ``; // original is `[suites, tests, snapshots, time].join('\n');`
 };
 
 module.exports = getSummary;
