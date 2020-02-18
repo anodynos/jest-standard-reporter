@@ -62,7 +62,7 @@ const logTests = (tests, indentLevel) => {
 
 const logTest = (test, indentLevel) => {
   const status = getIcon(test.status);
-  const time = test.duration ? ` (${test.duration.toFixed(0)}ms)` : '';
+  const time = ''; // jest-standard reporter is `test.duration ? ` (${test.duration.toFixed(0)}ms)` : '';`
   const testStatus = `${status} ${chalk.dim(test.title + time)}`;
 
   return getLine(testStatus, indentLevel);
